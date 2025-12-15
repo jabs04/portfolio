@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { PortfolioProvider } from './context/PortfolioContext';
 import Portfolio from './pages/Portfolio';
 import AdminLogin from './pages/AdminLogin';
@@ -9,7 +9,7 @@ function App() {
   return (
     <ErrorBoundary>
       <PortfolioProvider>
-        <Router basename="/portfolio">
+        <Router>
           <Routes>
             <Route path="/" element={<Portfolio />} />
             <Route path="/admin" element={<AdminLogin />} />
