@@ -9,7 +9,7 @@ function App() {
   return (
     <ErrorBoundary>
       <PortfolioProvider>
-        <Router>
+        <Router basename="/portfolio">
           <Routes>
             <Route path="/" element={<Portfolio />} />
             <Route path="/admin" element={<AdminLogin />} />
