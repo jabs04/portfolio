@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
 import ParallaxSection from './ParallaxSection';
 import { fadeIn, fadeInUp } from '../utils/animations';

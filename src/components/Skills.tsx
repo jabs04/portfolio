@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
                     whileInView="visible"
                     viewport={{ once: true, margin: '-100px' }}
                 >
-                    {skills.map((skill, index) => (
+                    {skills.map((skill) => (
                         <motion.div
                             key={skill.id}
                             className="skill-card card"

@@ -5,7 +5,7 @@ import type { Skill } from '../../types/types';
 import './AdminEditor.css';
 
 const SkillsEditor: React.FC = () => {
-    const { data, updateSkills, addSkill, deleteSkill } = usePortfolio();
+    const { data, updateSkills } = usePortfolio();
     const [skills, setSkills] = useState(data.skills);
     const [saved, setSaved] = useState(false);
 
